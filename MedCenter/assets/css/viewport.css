@@ -1,0 +1,192 @@
+@media (min-width:2000px){
+  #banner{
+    height: 870px;
+  }
+}
+
+@media (max-width:1024px){
+  .container{
+    flex-flow: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  header{
+    height: auto;
+  }
+  .menuArea{
+    flex-flow: column;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .logo, .menu{
+    align-self: center;
+  }
+  #geral{
+    padding: 20px;
+  }
+  .widgetLatestNews{
+    justify-content: space-around;
+  }
+  .widgetLatestNews article{
+    max-width: 40%;
+    margin-left: 20px;
+  }
+  .widgetDepartments{
+    justify-content: center;
+  }
+  .widgetDepartments a{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .widgetDepartmentsSquare{
+    width: 230px;
+  }
+  .widgetAppointmentContactArea{
+    display: flex;
+    justify-content: space-around;
+  }
+  .widgetAppointmentContact{
+    padding: 20px;
+    border: none;
+  }
+  .footerArea{
+    padding: 20px;
+  }
+}
+
+@media (max-width:900px){
+  .footerArea{
+    flex-flow: row break;
+    margin-top: 0;
+  }
+  .footerAreaItem{
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footerCopy{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .widgetMedicenterContact{
+    flex-flow: column;
+  }
+  .widgetMedicenterContact .contact{
+    margin-top: 30px;
+    text-align: left;
+    align-self: flex-start;
+  }
+}
+
+@media (max-width:768px){
+  #banner{
+    display: inline-table;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .bannerOptions{
+    flex-flow: column;
+  }
+  .bannerDesc{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .footerMenu{
+    height: auto;
+  }
+  .footerMenu a{
+    justify-content: space-around;
+  }
+  .footerArea{
+    flex-flow: column;
+  }
+}
+
+@media (max-width:720px){
+  header{
+    height: auto;
+  }
+  .menuArea{
+    flex-flow: row;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  article .newsTitle{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  article .newsDesc{
+    line-height: 16px;
+    font-size: 14px;
+  }
+  .menu nav ul{
+    display: none;
+    flex-flow: column;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    background-color: #fff;
+  }
+  .sandwichMenu{
+    display: flex;
+  }
+}
+
+@media (max-width:600px){
+  #banner{
+    background-size: 150%;
+  }
+  .bannerHeadline{
+    text-align: center;
+  }
+  .bannerHeadline h1{
+    font-size: 50px;
+    line-height: 50px;
+    align-self: center;
+  }
+  .bannerHeadline h2{
+    font-size: 20px;
+    line-height: 20px;
+    align-self: center;
+  }
+  .widgetLatestNews article{
+    max-width: 100%;
+  }
+  .widgetDepartmentsSquare{
+    width: 80px;
+    height: 80px;
+  }
+  .widgetAppointmentContactArea{
+    flex-flow: column;
+  }
+  .widgetAppointmentContact{
+    padding: 10px 0 10px 0;
+    border-top: 1px solid #ccc;
+  }
+  .widgetAppointmentContactLast{
+    border-bottom: 1px solid #ccc;
+  }
+  .footerMenu{
+    flex-flow: column;
+  }
+}
+
+@media (max-width:375px){
+  #banner{
+    background-size: 180%;
+  }
+}
+
+@media (max-width:320px){
+  #banner{
+    background-size: 210%;
+  }
+  .widgetDepartmentsSquare{
+    width: 100px;
+    height: 100px;
+  }
+}
