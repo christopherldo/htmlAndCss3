@@ -7,3 +7,6 @@ I recreated already built projects to learn more about HTML and CSS.
 
 I hope you enjoy it, but do not forget that you can not use these layouts as yours patterns.
 They are not mine, and they are here just for educational porpuse.
+
+Acadia: <a>https://christopherdeoliveira.000webhostapp.com/Acadia/</a>
+MedCenter: <a>https://christopherdeoliveira.000webhostapp.com/MedCenter/</a>
