@@ -1,192 +1,271 @@
-@media (min-width:2000px){
-  #banner{
-    height: 870px;
-  }
-}
-
-@media (max-width:1024px){
-  .container{
-    flex-flow: column;
-    justify-content: space-between;
-    width: 100%;
-  }
-  header{
-    height: auto;
-  }
-  .menuArea{
-    flex-flow: column;
-    justify-content: space-around;
-    padding: 20px;
-  }
-  .logo, .menu{
-    align-self: center;
-  }
-  #geral{
-    padding: 20px;
-  }
-  .widgetLatestNews{
+@media (max-width:1023px){
+  .container .topArea{
     justify-content: space-around;
   }
-  .widgetLatestNews article{
-    max-width: 40%;
-    margin-left: 20px;
+  .topArea .topAreaMenu{
+    margin-left: 0;
   }
-  .widgetDepartments{
+  .topArea .topAreaSocial{
+    margin-left: 0;
+  }
+  .mainSection .main{
     justify-content: center;
   }
-  .widgetDepartments a{
-    margin-left: 10px;
-    margin-right: 10px;
+  .mainSection .mainLeft,
+  .mainSection .mainRight{
+    flex: 0;
   }
-  .widgetDepartmentsSquare{
-    width: 230px;
+  .mainSection .mainLeft img{
+    max-height: 477px;
   }
-  .widgetAppointmentContactArea{
+  .threeItemsSection{
     display: flex;
     justify-content: space-around;
   }
-  .widgetAppointmentContact{
-    padding: 20px;
-    border: none;
+  .threeItemsSection .threeItems{
+    width: 100%;
+    justify-content: center;
   }
-  .footerArea{
-    padding: 20px;
+  .threeItems img {
+    max-height: 350px;
+    width: auto;
   }
-}
-
-@media (max-width:900px){
-  .footerArea{
-    flex-flow: row break;
-    margin-top: 0;
+  .threeItems .itemOne a,
+  .threeItems .itemTwo a,
+  .threeItems .itemThree a{
+    display: flex;
+    justify-content: center;
   }
-  .footerAreaItem{
-    margin-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+  .threeItems p{
+    max-width: fit-content;
   }
-  .footerCopy{
-    padding-left: 20px;
-    padding-right: 20px;
+  .videoArea .videoCover{
+    width: 608px;
+    height: 342px;
   }
-  .widgetMedicenterContact{
-    flex-flow: column;
+  .instagramArea .instagramImages{
+    flex-flow: wrap;
+    flex: 2;
+    justify-content: center;
   }
-  .widgetMedicenterContact .contact{
-    margin-top: 30px;
-    text-align: left;
-    align-self: flex-start;
+  .instagramArea .instagramImages a{
+    padding: 10px;
   }
-}
-
-@media (max-width:768px){
-  #banner{
-    display: inline-table;
-    background-size: 200%;
-    background-repeat: no-repeat;
-    background-position: top;
+  .instagramArea .instagramTitle{
+    flex: 1;
+    margin-top: 65px;
   }
-  .bannerOptions{
-    flex-flow: column;
+  .instagramArea .instagramImages img{
+    margin: 0px;
+    max-width: 200px;
   }
-  .bannerDesc{
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .footerMenu{
-    height: auto;
-  }
-  .footerMenu a{
-    justify-content: space-around;
-  }
-  .footerArea{
-    flex-flow: column;
+  .instagramTitle .instagramText{
+    font-size: 30px;
   }
 }
 
-@media (max-width:720px){
-  header{
-    height: auto;
+@media (max-width:899px){
+  .topArea .topAreaSocial{
+    display: none;
   }
-  .menuArea{
-    flex-flow: row;
-    padding: 20px;
-    justify-content: space-between;
+  .aboutSection .about{
+    flex-flow: column;
+  }
+  .about .aboutLeft{
+    margin-left: 0;
+    margin-right: 0;
     align-items: center;
   }
-  article .newsTitle{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 18px;
+  .about .aboutRight{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 50px;
+    padding: 0 40px 0 40px;
+    text-align: center;
   }
-  article .newsDesc{
-    line-height: 16px;
-    font-size: 14px;
+  .threeItems img{
+    max-height: 300px;
   }
-  .menu nav ul{
+  .threeItems p{
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .videoSection .videoArea{
+    width: 100%;
+  }
+  .instagramSection .instagramArea{
+    flex-flow: column;
+  }
+  .instagramArea .instagramTitle{
+    flex: 0;
+    order: 1;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .instagramArea .instagramImages{
+    flex: 0;
+    order: 2;
+    margin-top: 50px;
+  }
+  .instagramArea .instagramImages img{
+    max-width: 300px;
+  }
+}
+
+@media (max-width:767px){
+  .mainSection .main{
+    flex-flow: column;
+  }
+  .mainSection .mainLeft{
+    display: none
+  }
+  .mainSection .mainRight{
+    margin-top: 0;
+  }
+  .mainRight .mainRightTop{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+  }
+  .mainRight .mainRightBottom{
+    margin-top: 70px;
+    justify-content: center;
+  }
+  .mainRightBottom .rightBottomRight{
+    display: flex;
+    align-self: flex-end;
+  }
+  .threeItemsSection .threeItems{
+    flex-flow: wrap;
+  }
+  .threeItems img{
+    max-height: 450px;
+  }
+  .threeItems .itemThree{
+    margin-top: 50px;
+  }
+  .threeItems p{
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width:719px){
+  .container{
+    padding-top: 0;
+  }
+  .container .topArea{
+    justify-content: space-between;
+    padding: 20px;
+    margin: 40px 40px 0px 40px;
+  }
+  .topAreaMenu .menu ul{
+    width: 100%;
     display: none;
     flex-flow: column;
     position: absolute;
+    margin-top: 84px;
     left: 0;
-    top: 80px;
-    width: 100%;
     background-color: #fff;
+    border-bottom: 1px solid #000;
+  }
+  .topAreaMenu .menu li{
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #000;
+  }
+  .topAreaMenu .menu a{
+    margin-left: 0;
   }
   .sandwichMenu{
     display: flex;
   }
-}
-
-@media (max-width:600px){
-  #banner{
-    background-size: 150%;
+  .mainSection .mainRight{
+    margin-left: 0;
   }
-  .bannerHeadline{
+  .mainRight .mainRightTop{
+    margin-left: 0;
+  }
+  .mainRight .mainRightBottom{
+    flex-flow: column;
+    align-items: center;
+  }
+  .mainRightBottom .rightBottomLeft{
+    margin-right: 0;
+  }
+  .mainRightBottom .rightBottomRight{
+    align-self: unset;
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  .newsletterForm form{
+    display: flex;
+  }
+  .about .aboutRight{
+    padding: 0 60px 0 60px;
+    text-align: justify;
+  }
+  .threeItems .itemTwo{
+    margin-top: 50px;
+  }
+  .videoArea .videoCover{
+    width: 368px;
+    height: 207px;
+  }
+  .footerArea .footerAreaCopyright{
+    flex-flow: column;
     text-align: center;
   }
-  .bannerHeadline h1{
-    font-size: 50px;
-    line-height: 50px;
-    align-self: center;
-  }
-  .bannerHeadline h2{
-    font-size: 20px;
-    line-height: 20px;
-    align-self: center;
-  }
-  .widgetLatestNews article{
-    max-width: 100%;
-  }
-  .widgetDepartmentsSquare{
-    width: 80px;
-    height: 80px;
-  }
-  .widgetAppointmentContactArea{
-    flex-flow: column;
-  }
-  .widgetAppointmentContact{
-    padding: 10px 0 10px 0;
-    border-top: 1px solid #ccc;
-  }
-  .widgetAppointmentContactLast{
-    border-bottom: 1px solid #ccc;
-  }
-  .footerMenu{
-    flex-flow: column;
+  .footerAreaCopyright .credits{
+    border-left: none;
   }
 }
 
-@media (max-width:375px){
-  #banner{
-    background-size: 180%;
+@media (max-width:424px){
+  .container .topArea{
+    margin: 15px 0px 0px 0px;
+  }
+  .newsletterForm form{
+    flex-flow: column;
+  }
+  .newsletter .newsletterForm input{
+    margin-left: 0;
+  }
+  .newsletter .newsletterForm button{
+    margin-right: 0;
+    margin-top: 10px;
   }
 }
 
-@media (max-width:320px){
-  #banner{
-    background-size: 210%;
+@media (max-width:374px){
+  .container .topArea{
+    margin: 15px 15px 0px 15px;
   }
-  .widgetDepartmentsSquare{
-    width: 100px;
-    height: 100px;
+  .topArea .topAreaLogo a{
+    font-size: 15px;
+    padding: 5px 20px 5px 20px;
+  }
+  .threeItems img{
+    max-height: 350px;
+  }
+  .videoArea .videoCover{
+    width: 288px;
+    height: 162px;
+  }
+  .instagramArea .instagramImages img{
+    max-width: 250px;
+  }
+  .footerArea .footerAreaCopyright{
+    font-size: 10px;
+  }
+  .footerArea .footerAreaRecreation a{
+    font-size: 10px;
+  }
+  .footerAreaRecreation a svg{
+    display: none;
   }
 }
