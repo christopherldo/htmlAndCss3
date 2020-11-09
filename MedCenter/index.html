@@ -1,80 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/viewport.css">
-    <link rel="icon" href="./favicon.png">
-    <title>Acadia</title>
-    <script>
-      window.onload = function(){
-        document.querySelector(".sandwichMenu").addEventListener("click", function(){
-          if(document.querySelector(".topAreaMenu nav ul").style.display === 'flex') {
-            document.querySelector(".topAreaMenu nav ul").style.display = 'none';
-          } else {
-            document.querySelector(".topAreaMenu nav ul").style.display = 'flex';
-          }
-        });
-      };
-
-      window.addEventListener('resize', function(event){
-        if(document.getElementById("youtubeVideo").offsetWidth > 0){
-          showYoutubeVideo();
-        };
-        if((document.querySelector(".topAreaMenu nav ul").style.display === 'none') && (window.innerWidth > 719)){
-          document.querySelector(".topAreaMenu nav ul").style.display = 'flex';
-        } else if((document.querySelector(".topAreaMenu nav ul").style.display === 'flex') && (window.innerWidth <= 719)){
-          document.querySelector(".topAreaMenu nav ul").style.display = 'none';
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=0">
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/viewport.css">
+  <script type="text/javascript">
+    window.onload = function(){
+      document.querySelector(".sandwichMenu").addEventListener("click", function(){
+        if(document.querySelector(".menu nav ul").style.display === 'flex') {
+          document.querySelector(".menu nav ul").style.display = 'none';
+        } else {
+          document.querySelector(".menu nav ul").style.display = 'flex';
         }
       });
-
-      function showYoutubeVideo() {
-        document.getElementById("videoCover").style.height = "0";
-        document.getElementById("videoCoverButton").style.height = "0";
-        if (window.innerWidth <= 374) {
-          document.getElementById("youtubeVideo").width = "288";
-          document.getElementById("youtubeVideo").height = "162";
-        } else if(window.innerWidth <= 719){
-          document.getElementById("youtubeVideo").width = "368";
-          document.getElementById("youtubeVideo").height = "207";
-        } else if(window.innerWidth <= 1023){
-          document.getElementById("youtubeVideo").width = "608";
-          document.getElementById("youtubeVideo").height = "342";
-        } else {
-          document.getElementById("youtubeVideo").width = "880";
-          document.getElementById("youtubeVideo").height = "495";
-        }
-      };
-    </script>
-  </head>
-  <body>
+    };
+  </script>
+  <title>MediCenter</title>
+</head>
+<body>
+  <header>
     <div class="container">
-      <header class="topArea">
-        <div class="topAreaLogo">
-          <a href="#">
-          Acadia
-          </a>
+      <div class="menuArea">
+        <div class="logo">
+          <a href="#"><img src="./assets/images/logo.png" alt="Logo MediCenter"></a>
         </div>
-        <div class="topAreaMenu">
-          <nav class="menu">
+        <div class="menu">
+          <nav>
             <ul>
-              <a href="#">
-                <li>Blog</li>
-              </a>
-              <a href="#">
-                <li>Shop</li>
-              </a>
-              <a href="#">
-                <li>Portfolio</li>
-              </a>
-              <a href="#">
-                <li>About</li>
-              </a>
-              <a href="#">
-                <li>Contact</li>
-              </a>
+              <li class="active"><a href="#">home</a></li>
+              <li><a href="#">blog</a></li>
+              <li><a href="#">pages</a></li>
+              <li><a href="#">departments</a></li>
+              <li><a href="#">timetable</a></li>
+              <li><a href="#">gallery</a></li>
+              <li><a href="#">contact</a></li>
             </ul>
           </nav>
           <div class="sandwichMenu">
@@ -89,215 +50,373 @@
             </div>
           </div>
         </div>
-        <div class="topAreaSocial">
-          <a href="#">
-            <div class="socialIcon">
-            </div>
-          </a>
-          <a href="#">
-            <div class="socialIcon">
-            </div>
-          </a>
-          <a href="#">
-            <div class="socialIcon">
-            </div>
-          </a>
-          <a href="#">
-            <div class="socialIcon">
-            </div>
-          </a>
-        </div>
-      </header>
-      <section class="mainSection">
-        <div class="main">
-          <div class="mainLeft">
-            <img src="./assets/images/image-asset_1.jpeg" alt="Cover Image">
-          </div>
-          <div class="mainRight">
-            <div class="mainRightTop">
-              <div class="smallerBar"></div>
-              <div class="mainText">
-                <h1>
-                  Curating<br>
-                  the best of<br>
-                  the ordinary<br>
-                  & everyday
-                </h1>
-              </div>
-              <div class="smallerBar"></div>
-            </div>
-            <div class="mainRightBottom">
-              <div class="rightBottomLeft">
-                <a href="#">
-                <img src="./assets/images/feature.jpg" alt="The Latest">
-                </a>
-              </div>
-              <div class="rightBottomRight">
-                <a href="#">
-                <img src="./assets/images/image-asset_2.jpeg" alt="Insta with Us">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="newsletterSection">
-        <div class="newsletter">
-          <div class="newsletterText">
-            Get on the list
-          </div>
-          <div class="newsletterForm">
-            <form action="#">
-              <input type="email" placeholder="Email Address">
-              <button type="submit">Subscribe</button>
-            </form>
-          </div>
-        </div>
-      </section>
-      <section class="aboutSection">
-        <div class="about">
-          <div class="aboutLeft">
-            <div class="aboutLeftText">
-              <h2>
-                We're passionate<br>
-                about simplicity
-              </h2>
-            </div>
-            <div class="biggerBar">
-            </div>
-            <div class="smallerBar">
-            </div>
-          </div>
-          <div class="aboutRight">
-            <div class="aboutRightText">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam felis elit, tincidunt ut gravida nec, maximus pharetra tellus. Proin mattis quis magna sed elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce vel porttitor est. Integer elit lectus, venenatis quis egestas a, tincidunt et ligula. Sed bibendum odio in nulla sollicitudin, ut sollicitudin ex convallis. Quisque diam turpis, sollicit udin non diam a, malesuada pellentesque turpis. Nulla aliquet tristique. Proin imperdiet sapien tincidunt metus faucibus, in semper mi aliquet.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="threeItemsSection">
-        <div class="threeItems">
-          <div class="itemOne">
-            <a href="#">
-            <img src="./assets/images/image-asset_1.png" alt="Get the Goods">
-            </a>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur ut
-              adipiscing elit. Nam felis elit, tincidunt elit
-              gravida nec, maximus pharetra tellus. Proin mattis quis magna sed elementum.
-            </p>
-          </div>
-          <div class="itemTwo">
-            <a href="#">
-            <img src="./assets/images/blog.png" alt="Blog">
-            </a>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur ut
-              adipiscing elit. Nam felis elit, tincidunt elit
-              gravida nec, maximus pharetra tellus. Proin mattis quis magna sed elementum.
-            </p>
-          </div>
-          <div class="itemThree">
-            <a href="#">
-            <img src="./assets/images/image-asset_2.png" alt="Get in Touch">
-            </a>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur ut
-              adipiscing elit. Nam felis elit, tincidunt elit
-              gravida nec, maximus pharetra tellus. Proin mattis quis magna sed elementum.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="videoSection" onclick="showYoutubeVideo()">
-        <div id="videoArea" class="videoArea">
-          <div id="videoCover" class="videoCover">
-            <span class="coverButtonWrap">
-              <div id="videoCoverButton" class="videoCoverButton">
-              </div>
-            </span>
-          </div>
-          <div class="youtubeVideo">
-            <iframe id="youtubeVideo" width="0" height="0" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1">
-            </iframe>
-          </div>
-        </div>
-      </section>
-      <section class="instagramSection">
-        <div class="instagramArea">
-          <div class="instagramImages">
-            <a href="#">
-            <img class="firstImage" src="./assets/images/image-asset_3.jpeg" alt="Instagram Image 1">
-            </a>
-            <a href="#">
-            <img src="./assets/images/image-asset_4.jpeg" alt="Instagram Image 2">
-            </a>
-            <a href="#">
-            <img src="./assets/images/image-asset_5.jpeg" alt="Instagram Image 3">
-            </a>
-            <a href="#">
-            <img class="lastImage" src="./assets/images/image-asset_6.jpeg" alt="Instagram Image 4">
-            </a>
-          </div>
-          <div class="instagramTitle">
-            <div class="smallerBar">
-            </div>
-            <div class="instagramText">
-              <h2>
-                Instagram <br>
-                with us
-              </h2>
-            </div>
-            <div class="smallerBar">
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer class="websiteFooter">
-        <div class="footerArea">
-          <div class="footerAreaLogo">
-            <a href="#">
-            Acadia
-            </a>
-          </div>
-          <div class="footerAreaCopyright">
-            <div class="copyright">
-              Copyrigth 2017 Acadia
-            </div>
-            <div class="credits">
-              Site design handcrafted by Station Seven
-            </div>
-          </div>
-          <div class="footerAreaRecreation">
-            <a href="https://github.com/christopherldo/" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-              </svg>
-              <h3>Recreated by Christopher de Oliveira</h3>
-            </a>
-          </div>
-          <div class="footerAreaSocial">
-            <a href="#" class="firstSocialIcon">
-              <div class="socialIcon">
-              </div>
-            </a>
-            <a href="#">
-              <div class="socialIcon">
-              </div>
-            </a>
-            <a href="#">
-              <div class="socialIcon">
-              </div>
-            </a>
-            <a href="#">
-              <div class="socialIcon">
-              </div>
-            </a>
-          </div>
-        </div>
-      </footer>
+      </div>
     </div>
-  </body>
+  </header>
+
+  <section id="banner">
+    <div class="container column">
+      <div class="bannerHeadline">
+        <h1>
+          Top notch experience
+        </h1>
+        <h2>
+          Medicenter is a responsive template perfect for all screen sizes
+        </h2>
+      </div>
+      <div class="bannerOptions">
+        <div class="banner1">
+          <div class="bannerTitle">
+            Emergency Case
+          </div>
+          <div class="bannerDesc">
+            If you need a doctor urgently outside of medicenter opening hours, call emergency appointment number for emergency service.
+          </div>
+          <a href="#">Read more ⇒</a>
+        </div>
+        <div class="banner2">
+          <div class="bannerTitle">
+            Doctors Timetable
+          </div>
+          <div class="bannerDesc">
+            Here at medicenter we have individual doctor's lists. Click read more below to see services and current timetable for our doctors.
+          </div>
+          <a href="#">Read more ⇒</a>
+        </div>
+        <div class="banner3">
+          <div class="bannerTitle">
+            Opening Hours
+          </div>
+          <div class="bannerDesc bannerDescDate">
+            <div class="date">
+              <div class="day">Monday - Friday</div>
+              <div class="hour">8.00 - 17.00</div>
+            </div>
+            <div class="date">
+              <div class="day">Saturday</div>
+              <div class="hour">9.30 - 17.30</div>
+            </div>
+            <div class="date date3">
+              <div class="day">Sunday</div>
+              <div class="hour">9.30 - 15.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="geral">
+    <div class="container">
+      <section>
+        <div class="widget">
+          <div class="widgetTitle">
+            <div class="widgetTitleText">Latest News</div>
+            <div class="widgetTitleBar"></div>
+          </div>
+          <div class="widgetBody">
+            <div class="widgetLatestNews">
+                <article>
+                  <div class="newsData">
+                    <div class="newsPostedAt">
+                      12 DEC 12
+                    </div>
+                    <div class="newsComments">
+                      2
+                    </div>
+                  </div>
+                  <a href="#">
+                    <div class="newsThumbnail">
+                      <img src="./assets/images/dr.jpg" alt="Miniatura da notícia">
+                    </div>
+                    <div class="newsTitle">
+                      Lorem ipsum dolor sit amat velum
+                    </div>
+                    <div class="newsDesc">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem dicta culpa veniam dolorem. Saepe quasi eius voluptas perspiciatis, repudiandae a illum maiores unde id illo autem voluptatem cum distinctio qui? Minus, possimus dolorum aliquam
+                    </div>
+                  </a>
+                </article>
+                <article>
+                  <div class="newsData">
+                    <div class="newsPostedAt">
+                      12 DEC 12
+                    </div>
+                    <div class="newsComments">
+                      2
+                    </div>
+                  </div>
+                  <a href="#">
+                    <div class="newsThumbnail">
+                      <img src="./assets/images/dr.jpg" alt="Miniatura da notícia">
+                    </div>
+                    <div class="newsTitle">
+                      Lorem ipsum dolor sit amat velum
+                    </div>
+                    <div class="newsDesc">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem dicta culpa veniam dolorem. Saepe quasi eius voluptas perspiciatis, repudiandae a illum maiores unde id illo autem voluptatem cum distinctio qui? Minus, possimus dolorum aliquam
+                    </div>
+                  </a>
+                </article>
+                <article>
+                  <div class="newsData">
+                    <div class="newsPostedAt">
+                      12 DEC 12
+                    </div>
+                    <div class="newsComments">
+                      2
+                    </div>
+                  </div>
+                  <a href="#">
+                    <div class="newsThumbnail">
+                      <img src="./assets/images/dr.jpg" alt="Miniatura da notícia">
+                    </div>
+                    <div class="newsTitle">
+                      Lorem ipsum dolor sit amat velum
+                    </div>
+                    <div class="newsDesc">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem dicta culpa veniam dolorem. Saepe quasi eius voluptas perspiciatis, repudiandae a illum maiores unde id illo autem voluptatem cum distinctio qui? Minus, possimus dolorum aliquam
+                    </div>
+                  </a>
+                </article>
+                <article>
+                  <div class="newsData">
+                    <div class="newsPostedAt">
+                      12 DEC 12
+                    </div>
+                    <div class="newsComments">
+                      2
+                    </div>
+                  </div>
+                  <a href="#">
+                    <div class="newsThumbnail">
+                      <img src="./assets/images/dr.jpg" alt="Miniatura da notícia">
+                    </div>
+                    <div class="newsTitle">
+                      Lorem ipsum dolor sit amat velum
+                    </div>
+                    <div class="newsDesc">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem dicta culpa veniam dolorem. Saepe quasi eius voluptas perspiciatis, repudiandae a illum maiores unde id illo autem voluptatem cum distinctio qui? Minus, possimus dolorum aliquam
+                    </div>
+                  </a>
+                </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <aside>
+        <div class="widget">
+          <div class="widgetTitle">
+            <div class="widgetTitleText">Departments</div>
+            <div class="widgetTitleBar"></div>
+          </div>
+          <div class="widgetBody">
+            <div class="widgetDepartments">
+              <a href="#"><div class="widgetDepartmentsSquare"></div></a>
+              <a href="#"><div class="widgetDepartmentsSquare"></div></a>
+              <a href="#"><div class="widgetDepartmentsSquare"></div></a>
+              <a href="#"><div class="widgetDepartmentsSquare"></div></a>
+              <a href="#"><div class="widgetDepartmentsSquare"></div></a>
+              <a href="#"><div class="widgetDepartmentsSquare"></div></a>
+            </div>
+          </div>
+        </div>
+        <div class="widget">
+          <div class="widgetTitle">
+            <div class="widgetTitleText">Make an Appointment</div>
+            <div class="widgetTitleBar"></div>
+          </div>
+          <div class="widgetBody">
+            <div class="widgetAppointment">
+              <div class="widgetAppointmentDesc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugit veritatis.
+              </div>
+              <div class="widgetAppointmentContactArea">
+                <div class="widgetAppointmentContact">
+                  <span class="icon">📞</span>
+                  <div class="appointmentContactDesc">
+                  by phone: <span class="telephone">1-800-543-4300</span>
+                  </div>
+                </div>
+                <div class="widgetAppointmentContact">
+                  <span class="icon">✉️</span>
+                  <div class="appointmentContactDesc">
+                  by e-mail: <span class="email">medicenter@mail.com</span>
+                  </div>
+                </div>
+                <div class="widgetAppointmentContact widgetAppointmentContactLast">
+                  <span class="icon">✍🏼</span>
+                  <div class="appointmentContactDesc">
+                  or <a href="#">fill in the form</a> on our contact page
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footerContainer">
+      <div class="footerMenu">
+        <div class="fm1">
+          <a href="#">
+            <div class="bannerTitle">
+              Health Insurance
+            </div>
+            <div class="bannerDesc">
+              Here in medicenter we have individual ⇒
+            </div>
+          </a>
+        </div>
+        <div class="fm2">
+          <a href="#">
+            <div class="bannerTitle">
+              Medical Records
+            </div>
+            <div class="bannerDesc">
+              Here in medicenter we have individual ⇒
+            </div>
+          </a>
+        </div>
+        <div class="fm3">
+          <a href="#">
+            <div class="bannerTitle">
+              Online Bill Pay
+            </div>
+            <div class="bannerDesc">
+              Here in medicenter we have individual ⇒
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="footerArea">
+        <div class="footerAreaItem">
+          <div class="widgetTitle">
+            <div class="widgetTitleText">Medicenter Clinic</div>
+            <div class="widgetTitleBar"></div>
+          </div>
+          <div class="widgetBody">
+            <div class="widgetMedicenterClinic">
+              <div class="widgetMedicenterDesc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae incidunt eveniet
+              </div>
+              <div class="widgetMedicenterContact">
+                <div class="address">
+                  Medicenter Clinic<br>
+                  33 Farlane Street<br>
+                  Kellor East<br>
+                  VIC 3033, Australia
+                </div>
+                <div class="contact">
+                  +123 655 655<br>
+                  +123 755 755<br>
+                  <span class="email">medicenter@mail.com</span>
+                </div>
+              </div>
+              <div class="widgetMedicenterSocial">
+                <a href="#"><div class="social socialFirst"></div></a>
+                <a href="#"><div class="social"></div></a>
+                <a href="#"><div class="social"></div></a>
+                <a href="#"><div class="social"></div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footerAreaItem">
+          <div class="widgetTitle">
+            <div class="widgetTitleText">Latest Posts</div>
+            <div class="widgetTitleBar"></div>
+          </div>
+          <div class="widgetBody">
+            <div class="widgetLatestPosts">
+              <div class="widgetPostsDesc">
+                <div class="posts postsFirst">
+                  <div class="postsArrow">⇒</div>
+                  <a href="#">
+                    <div class="postsDesc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla.
+                      <br>
+                      <span class="postsDescDate">6 years ago</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="posts">
+                  <div class="postsArrow">⇒</div>
+                  <a href="#">
+                    <div class="postsDesc">
+                      Lorem ipsum dolor sit amet, consectetur.
+                      <br>
+                      <span class="postsDescDate">6 years ago</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="posts">
+                  <div class="postsArrow">⇒</div>
+                  <a href="#">
+                    <div class="postsDesc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas.
+                      <br>
+                      <span class="postsDescDate">6 years ago</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footerAreaItem">
+          <div class="widgetTitle">
+            <div class="widgetTitleText">Latest Tweets</div>
+            <div class="widgetTitleBar"></div>
+          </div>
+          <div class="widgetBody">
+            <div class="widgetLatestTweets">
+              <div class="widgetTweetsDesc">
+                <div class="posts postsFirst">
+                  <div class="postsArrow">⇒</div>
+                  <a href="#">
+                    <div class="postsDesc">
+                      Donec vestibulum, leo sit amet feugiat dapibus, est mi molestie enim, in auctor ante arcu...
+                      <span class="tweetLink">t.co/YVkhmpb30</span>
+                      <br>
+                      <span class="postsDescDate">6 years ago</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="posts">
+                  <div class="postsArrow">⇒</div>
+                  <a href="#">
+                    <div class="postsDesc">
+                      Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc id diam convallis, cursus...
+                      <span class="tweetLink">t.co/YVkhmpb30</span>
+                      <br>
+                      <span class="postsDescDate">6 years ago</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="posts">
+                  <div class="postsArrow">⇒</div>
+                  <a href="#">
+                    <div class="postsDesc">
+                      Curabitur mattis odio quis fringilla pellentesque. Integer dui nisl, pharetra eu accumsan id, consectetur...
+                      <span class="tweetLink">t.co/YVkhmpb30</span>
+                      <br>
+                      <span class="postsDescDate">6 years ago</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footerCopy">
+        Copyright - Todos os direitos reservados
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
