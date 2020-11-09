@@ -7,8 +7,9 @@ body{
 }
 
 .container{
-  width: 1040px;
-  padding: 20px;
+  width: 1020px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-flow: column;
 }
@@ -49,6 +50,24 @@ body{
 .topAreaMenu .menu li{
   padding: 10px 5px 10px 5px;
   text-transform: uppercase;
+}
+
+.sandwichMenu{
+  height: 44px;
+  width: 44px;
+  border-radius: 10px;
+  display: none;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sandwichMenuBar{
+  margin-top: 4px;
+  margin-bottom: 4px;  
+  width: 60%;
+  height: 5%;
+  background-color: #000;
 }
 
 .topArea .topAreaSocial{
@@ -101,6 +120,7 @@ body{
   padding: 10px 0px 10px 0px;
   letter-spacing: 4px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .mainRight .mainRightBottom{
@@ -128,7 +148,7 @@ body{
 .container .newsletterSection{
   margin-top: 70px;
   background-color: #51635a;
-  padding: 50px;
+  padding: 50px 0px 50px 0px;
 }
 
 .newsletterSection .newsletter{
