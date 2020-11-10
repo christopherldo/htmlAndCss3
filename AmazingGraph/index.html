@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/viewport.css">
+  <link rel="icon" href="./favicon.png">
+  <title>Amazing Graph</title>
+  <script>
+    window.onload = function(){
+        document.querySelector(".sandwichMenu").addEventListener("click", function(){
+          if(document.querySelector(".headerAreaMenu nav ul").style.display === 'flex') {
+            document.querySelector(".headerAreaMenu nav ul").style.display = 'none';
+          } else {
+            document.querySelector(".headerAreaMenu nav ul").style.display = 'flex';
+          }
+        });
+      };
+
+    window.addEventListener('resize', function(event){
+      if((document.querySelector(".headerAreaMenu nav ul").style.display === 'none') && (window.innerWidth > 719)){
+        document.querySelector(".headerAreaMenu nav ul").style.display = 'flex';
+      } else if((document.querySelector(".headerAreaMenu nav ul").style.display === 'flex') && (window.innerWidth <= 719)){
+        document.querySelector(".headerAreaMenu nav ul").style.display = 'none';
+      }
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header class="headerTitle">
+      <div class="headerArea">
+        <div class="headerAreaTitle">
+          <a href="/">
+            <h1>
+              DevChallenge
+            </h1>
+          </a>
+        </div>
+        <div class="headerAreaMenu">
+          <nav>
+            <ul>
+              <a href="#">
+                <li>
+                  Home
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  Features
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  Contact
+                </li>
+              </a>
+            </ul>
+          </nav>
+          <div class="sandwichMenu">
+            <div class="sandwichMenuBar">
+
+            </div>
+            <div class="sandwichMenuBar">
+
+            </div>
+            <div class="sandwichMenuBar">
+
+            </div>
+            <div class="sandwichMenuBar">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="mainSection">
+      <div class="mainSectionArea">
+        <div class="mainSectionContent">
+          <h1>
+            Create amazing<br>
+            graphics
+          </h1>
+          <h2>
+            Colaborate and create beautiful<br>
+            graphics with your team
+          </h2>
+          <a href="#">
+            Start now
+          </a>
+        </div>
+        <div class="mainSectionImage">
+          <img src="./assets/images/team.jpg" alt="Team image">
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

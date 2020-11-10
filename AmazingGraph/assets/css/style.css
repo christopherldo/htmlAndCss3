@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
+
+body{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  height: 100vh;
+  width: 1020px;
+}
+
+.headerArea{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerArea .headerAreaTitle{
+  display: flex;
+  align-items: center;
+}
+
+.headerArea .headerAreaTitle a{
+  color: #c7873c;
+  text-decoration: none;
+}
+
+.headerArea h1{
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+.headerArea nav ul{
+  display: flex;
+}
+
+.headerArea nav ul a{
+  font-size: 20px;
+  text-decoration: none;
+  color: #3d3e42;
+  margin-left: 35px;
+}
+
+.sandwichMenu{
+  height: 44px;
+  width: 44px;
+  border-radius: 10px;
+  display: none;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sandwichMenuBar{
+  margin-top: 4px;
+  margin-bottom: 2px;  
+  width: 60%;
+  height: 5%;
+  background-color: #5b4c4b;
+}
+
+.mainSection .mainSectionArea{
+  display: flex;
+  margin-top: 70px;
+}
+
+.mainSectionArea .mainSectionContent{
+  flex: 1;
+  margin-left: 60px;
+  display: flex;
+  flex-flow: column;
+  z-index: 2;
+}
+
+.mainSectionArea .mainSectionContent h1{
+  font-size: 60px;
+  white-space: nowrap;
+  line-height: 75px;
+  color: #756f69;
+}
+
+.mainSectionArea .mainSectionContent h2{
+  margin-top: 40px;
+  font-size: 24.7px;
+  white-space: nowrap;
+  color: #756f69;
+  font-weight: normal;
+}
+
+.mainSectionArea .mainSectionContent a{
+  font-size: 25px;
+  white-space: nowrap;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 70px;
+  padding: 20px 40px 20px 40px;
+  background-color: #c7873c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  border-radius: 15px;
+}
+
+.mainSectionArea .mainSectionImage{
+  flex: 1;
+  margin-top: 15px;
+}
+
+.mainSectionArea .mainSectionImage img{
+  margin-left: -110px;
+  height: 420px;
+}

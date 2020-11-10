@@ -1,0 +1,170 @@
+@media (max-width:1050px){
+  .container{
+    width: 100%;
+  }
+  .headerArea{
+    justify-content: space-around;
+  }
+  .headerArea .headerAreaMenu{
+    display: flex;
+    align-items: center;
+  }
+  .mainSection .mainSectionArea{
+    justify-content: center;
+  }
+  .mainSectionArea .mainSectionContent{
+    flex: 0;
+  }
+  .mainSectionArea .mainSectionContent h1{
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .mainSectionArea .mainSectionContent h2{
+    font-size: 20px;
+  }
+  .mainSectionArea .mainSectionContent a{
+    width: 100px;
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .mainSectionArea .mainSectionImage{
+    flex: 0;
+  }
+  .mainSectionArea .mainSectionImage img{
+    height: 340px;
+  }
+}
+
+@media (max-width:799px){
+  .mainSectionArea .mainSectionContent h1{
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .mainSectionArea .mainSectionContent h2{
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  .mainSectionArea .mainSectionContent a{
+    width: 100px;
+    font-size: 16px;
+    margin-top: 40px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+  }
+  .mainSectionArea .mainSectionImage{
+    flex: 0;
+    margin-top: 10px;
+  }
+  .mainSectionArea .mainSectionImage img{
+    height: 270px;
+    margin-left: -72px;
+  }
+}
+
+@media (max-width:767px){
+  .container{
+    height: unset;
+    padding-bottom: 50px;
+  }
+  .headerArea{
+    justify-content: space-between;
+    padding: 0px 30px;
+  }
+  .headerArea h1{
+    font-size: 28px;
+  }
+  .headerArea nav ul{
+    display: none;
+    flex-flow: column;
+    position: absolute;
+    margin-top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #c7873c;
+  }
+
+  .headerArea nav ul a{
+    border-top: 1px solid #c7873c;
+    margin-left: 0;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .sandwichMenu{
+    display: flex;
+  }
+  .mainSection .mainSectionArea{
+    flex-flow: column-reverse;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .mainSectionArea .mainSectionImage img{
+    margin-left: 0;
+  }
+  .mainSectionArea .mainSectionContent{
+    margin-left: 0;
+    text-align: center;
+    align-items: center;
+  }
+  .mainSectionArea .mainSectionImage{
+    width: 90%;
+  }
+  .mainSectionArea .mainSectionImage img{
+    width: 100%;
+    height: auto;
+  }
+  .mainSectionArea .mainSectionContent h1{
+    margin-top: 30px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .mainSectionArea .mainSectionContent h2{
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .mainSectionArea .mainSectionContent a{
+    font-size: 30px;
+    width: 80%;
+    padding: 20px 20px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width:450px){
+  .mainSectionArea .mainSectionContent h1{
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .mainSectionArea .mainSectionContent h2{
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .mainSectionArea .mainSectionContent a{
+    font-size: 30px;
+    width: 80%;
+    padding: 20px 20px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width:300px){
+  .headerArea h1{
+    font-size: 24px;
+  }
+  .sandwichMenuBar{
+    margin-bottom: 1px;
+  }
+  .mainSectionArea .mainSectionContent h1{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .mainSectionArea .mainSectionContent h2{
+    font-size: 17px;
+    line-height: 23px;
+  }
+  .mainSectionArea .mainSectionContent a{
+    padding: 10px;
+    font-size: 25px;
+  }
+}
