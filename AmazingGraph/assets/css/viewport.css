@@ -148,6 +148,15 @@
   }
 }
 
+@media (max-width:374px){
+  .footerAreaRecreation a svg{
+    display: none;
+  }
+  .footerArea .footerAreaRecreation a{
+    font-size: 10px;
+  }
+}
+
 @media (max-width:300px){
   .headerArea h1{
     font-size: 24px;
