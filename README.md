@@ -10,3 +10,4 @@ They are not mine, and they are here just for educational porpuse.
 
 Acadia: <a>https://christopherdeoliveira.000webhostapp.com/Acadia/</a><br>
 MedCenter: <a>https://christopherdeoliveira.000webhostapp.com/MedCenter/</a>
+AmazingGraph: <a>https://christopherdeoliveira.000webhostapp.com/AmazingGraph/<a>
