@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
+
+body{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #e4e4e4;
+}
+
+.website{
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.website header .container{
+  display: flex;
+  width: 1020px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+}
+
+.container .containerLeft{
+  flex: 1;
+  background-image: url(../images/image.png);
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.container .containerRight{
+  margin: 45px 0px 45px 45px;
+  flex: 1;
+}
+
+.containerRight .containerRightContent{
+  max-width: 340px;
+}
+
+.containerRight h1{
+  font-size: 30px;
+}
+
+.containerRight h2{
+  margin-top: 15px;
+  color: #b3b3b3;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.containerRight .contactArea{
+  margin-top: 25px;
+  display: flex;
+}
+
+.contactArea .emailArea,
+.contactArea .phoneArea{
+  margin-left: 15px;
+}
+
+.contactArea .title{
+  color: #b3b3b3;
+  font-size: 13px;
+}
+
+.contactArea .description{
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #939393;
+}
+
+.containerRight .quoteArea{
+  margin-top: 45px;
+}
+
+.containerRight .quoteArea h2{
+  color: #000;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.containerRight .quoteArea form{
+  margin-top: 10px;
+  display: flex;
+  flex-flow: column;
+}
+
+.quoteArea form span{
+  color: #b3b3b3;
+  font-size: 13px;
+}
+
+.quoteArea form input,
+.quoteArea form textarea{
+  padding: 10px 0px;
+  border: none;
+  border-bottom: 1px solid #b3b3b3;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.quoteArea form textarea{
+  resize: none;
+  height: 130px;
+}
+
+.quoteArea form button{
+  width: 150px;
+  padding: 8px;
+  font-weight: bold;
+  align-self: flex-end;
+  color: #3d3d3d;
+  border: 2px solid #3d3d3d;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.containerRight .socialArea{
+  margin-top: 100px;
+}
+
+.containerRightContent .socialArea h2{
+  margin-top: 0;
+  color: #000;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.socialArea .socials{
+  margin-top: 10px;
+  display: flex;
+}
+
+.socials .socialDescription{
+  margin-left: 15px;
+}
+
+.socials .facebook{
+  margin-left: 0;
+}
+
+.socialDescription .title{
+  color: #b3b3b3;
+  font-size: 13px;
+}
+
+.socialDescription .description{
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #939393;
+}
