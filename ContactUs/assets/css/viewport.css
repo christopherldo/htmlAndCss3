@@ -1,0 +1,102 @@
+@media (max-width: 1250px){
+  .website{
+    width: 100%;
+  }
+  .website header .container{
+    width: unset;
+    border-radius: 0;
+  }
+  .container .containerLeft{
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 767px){
+  .website{
+    width: unset;
+  }
+  .website header .container{
+    flex-flow: column;
+    border-radius: 20px;
+  }
+  .container .containerRight{
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .containerRight .containerRightContent{
+    max-width: unset;
+    width: 500px;
+  }
+  .container .containerLeft{
+    flex: unset;
+    height: 500px;
+    width: 100%;
+    order: 2;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-position: center 100%;
+  }
+}
+
+@media (max-width: 767px){
+  .website{
+    width: 100%;
+    margin: 0;
+  }
+  .website header .container{
+    border-radius: 0;
+  }
+  .container .containerLeft{
+    border-radius: 0;
+  }
+  .container .containerRight{
+    padding: 40px;
+  }
+}
+
+@media (max-width: 424px){
+  .containerRight .containerRightContent{
+    width: 100%;
+  }
+  .containerRight .containerRightContent{
+    display: flex;
+    flex-flow: column;
+  }
+  .containerRight h1{
+    align-self: center;
+  }
+  .containerRight h2{
+    font-size: 10px;
+    align-self: center;
+  }
+  .containerRight .contactArea{
+    flex-flow: column;
+  }
+  .contactArea .emailArea,
+  .contactArea .phoneArea{
+    margin-left: 0;
+    margin-top: 20px;  
+  }
+  .containerRight .quoteArea{
+    display: flex;
+    flex-flow: column;
+  }
+  .containerRight .quoteArea h2{
+    align-self: center;
+  }
+  .quoteArea form button{
+    align-self: center;
+  }
+  .containerRight .socialArea{
+    display: flex;
+    flex-flow: column;
+  }
+  .containerRightContent .socialArea h2{
+    align-self: center;
+  }
+  .socialArea .socials{
+    justify-content: space-around;
+  }
+}

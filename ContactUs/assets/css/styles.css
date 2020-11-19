@@ -15,7 +15,7 @@ body{
 
 .website header .container{
   display: flex;
-  width: 1020px;
+  width: 1220px;
   background: #fff;
   border-radius: 15px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
@@ -36,28 +36,28 @@ body{
 }
 
 .containerRight .containerRightContent{
-  max-width: 340px;
+  max-width: 400px;
 }
 
 .containerRight h1{
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .containerRight h2{
-  margin-top: 15px;
+  margin-top: 20px;
   color: #b3b3b3;
   font-weight: 400;
   font-size: 16px;
 }
 
 .containerRight .contactArea{
-  margin-top: 25px;
+  margin-top: 40px;
   display: flex;
 }
 
 .contactArea .emailArea,
 .contactArea .phoneArea{
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 .contactArea .title{
@@ -73,7 +73,7 @@ body{
 }
 
 .containerRight .quoteArea{
-  margin-top: 45px;
+  margin-top: 60px;
 }
 
 .containerRight .quoteArea h2{
@@ -83,7 +83,7 @@ body{
 }
 
 .containerRight .quoteArea form{
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   flex-flow: column;
 }
@@ -108,6 +108,7 @@ body{
 }
 
 .quoteArea form button{
+  margin-top: 40px;
   width: 150px;
   padding: 8px;
   font-weight: bold;
@@ -116,6 +117,7 @@ body{
   border: 2px solid #3d3d3d;
   border-radius: 2px;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .containerRight .socialArea{
@@ -130,12 +132,13 @@ body{
 }
 
 .socialArea .socials{
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
 }
 
 .socials .socialDescription{
-  margin-left: 15px;
+  margin-left: 20px;
+  cursor: pointer;
 }
 
 .socials .facebook{
